@@ -1,0 +1,62 @@
+.toast {
+    display: flex;
+    align-items: center;
+    min-width: 450px;
+    max-width: 650px;
+    height: 56px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-sizing: border-box;
+    position: absolute;
+    gap: 16px;
+    padding: 16px;
+    top:40px;
+    right:2px
+}
+
+.text--suscess {
+    color: var(--color-primary),
+}
+
+.text--warning {
+    color: #F49342,
+}
+
+.text--info {
+    color: #2680EB,
+}
+
+.text--error {
+    color: #DE3618,
+}
+
+.icon--success {
+    background: url("../../assets/img/Sprites.64af8f61.svg");
+    background-position: -848px -312px;
+    cursor: pointer;
+}
+
+.icon--warning {
+	background: url("../../assets/img/Sprites.64af8f61.svg");
+    background-position:  -593px -145px;
+}
+
+.icon--info {
+	background: url("../../assets/img/Sprites.64af8f61.svg");
+    background-position: -336px -231px;
+	background-size: 1008px 953px;
+}
+
+
+.icon-error {
+	background: url("../../assets/img/Sprites.64af8f61.svg");
+    background-position: -538px -146px;
+}
+
+.toast__close {
+    background: url("../../assets/img/Sprites.64af8f61.svg");
+    background-position: -144px -144px;
+    cursor: pointer;
+}
+

@@ -1,26 +1,33 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="employeelist">
+    <TheHeader></TheHeader>
+    <TheSidebar></TheSidebar>
+    <TheMainContainer></TheMainContainer>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import TheHeader from './components/layout/TheHeader.vue'
+import TheSidebar from './components/layout/TheSidebar.vue'
+import TheMainContainer from './components/layout/TheMainContainer.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TheHeader, TheSidebar, TheMainContainer
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url("./css/main.css");
+.employeelist {
+  display: grid;
+  grid-template-columns: 200px calc(100% - 200px);
+  grid-template-rows: 56px calc(100% - 56px);
+  width: 100vw;
+  height: 100vh;
+  grid-template-areas:
+                  "area1 area2 "
+                  "area1 area3 "
 }
 </style>
